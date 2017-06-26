@@ -1,0 +1,103 @@
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Bobby's Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js/parallax.min.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="angular-messages/angular-messages.js"></script>
+    <script src="my_angular/config.js"></script>
+    <script src="my_angular/factory.js"></script>
+    <script src="my_angular/indexController.js"></script>
+    <!-- <script src="my_angular/projectController.js"></script>
+    <script src="my_angular/resumeController.js"></script> -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/dist/clipboard.min.js"></script>
+    <script src="parallax.js/parallax.min.js"></script>
+    <script src="parallax.js/parallax.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/imghover.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/shine.css" />
+    <link rel="stylesheet" href="assets/css/slideshow.css" />
+    <link rel="stylesheet" href="assets/css/curtain.css" />
+    <link rel="stylesheet" href="assets/css/sticky_nav.css" />
+  <!-- scripts -->
+
+    <script>
+      $("#slideshow > div:gt(0)").hide();
+      setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+      }, 3000);
+    </script>
+
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+      }
+    </script>
+
+    <script>
+    // Sticky Header
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() > 100) {
+            $('.main_h').addClass('sticky');
+        } else {
+            $('.main_h').removeClass('sticky');
+        }
+    });
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.main_h').removeClass('open-nav');
+        } else {
+            $('.main_h').addClass('open-nav');
+        }
+    });
+
+    $('.main_h li a').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_h').removeClass('open-nav');
+        }
+    });
+
+    // navigation scroll lijepo radi materem
+    $('nav a').click(function(event) {
+        var id = $(this).attr("href");
+        var offset = 70;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 500);
+        event.preventDefault();
+    });
+    </script>
+
+  </head>
+  <body>
+    <div ng-view="">
+    </div>
+  </body>
+</html>

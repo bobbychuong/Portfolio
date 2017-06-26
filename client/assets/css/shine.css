@@ -1,0 +1,25 @@
+/*a.logo {
+	display: block;
+  width: 256px;
+	height: 256px;
+	background: url("http://www.w3.org/html/logo/downloads/HTML5_Badge_256.png") 0 0 no-repeat;
+}*/
+
+a.logo .shine {
+  width: 256px;
+	height: 256px;
+	display: block;
+	background: url("http://i.imgur.com/n1CetrS.png") -256px 0 no-repeat;
+  -webkit-transition: background 0s linear;
+  -moz-transition: background 0s linear;
+  -ms-transition: background 0s linear;
+  -o-transition: background 0s linear;
+}
+
+a.logo:hover .shine {
+	background-position: 256px 0px;
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -ms-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+}
