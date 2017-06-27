@@ -5,6 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+	.parallax {
+    /* The image used */
+    background-image: url("images/keyboard2.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
 	<body>
 
 	<!-- Banner -->
@@ -16,6 +31,10 @@
 						<h1>Bobby's Portfolio</h1>
 					</header>
 				</div>
+		<!-- Scroll Down button -->
+				<section id="section06" class="demo">
+					<a href="#section07"><span></span></a>
+				</section>
 			</section>
 
 			<hr />
@@ -47,6 +66,8 @@
 						</div>
 					</section>
 					<hr />
+					<div class="parallax"></div>
+
 				<!-- Section -->
 
 					<section class="wrapper style1">
@@ -69,7 +90,8 @@
 											<img src="images/rsz_showroom_allshows.jpg"/>
 										</div>
 									</div>
-									<p>Television application where users sign up, view their top shows, and add upcoming favorites to their dashboard.</p>
+									<p>Television application where users sign up, view their top shows, and add upcoming favorites to their dashboard.</p> <br />
+									<p>Technologies: Html, CSS, Javascript, MongoDB, Materialize, Tv Maze Api, Twilio Api,</p>
 								</div>
 							</div>
 
@@ -80,13 +102,10 @@
 										<h3>Street Chow</h3>
 									<div id="slideshow3">
 										<div class="slideshow4">
-											<img src="images/rsz_1streetchow_log.jpg"/>
-										</div>
-										<div>
-											<img src="images/rsz_streetchow_dashboard.jpg">
+											<img src="images/StreetChow - Copy.jpg" width="100%" height="100%"/>
 										</div>
 									</div>
-									<p>Postgres application connecting homeless people with local free meals.</p>
+									<p>Postgres application connecting homeless people with local free meals. Users who sign up are able to populate their location on google maps </p>
 								</div>
 							</div>
 						</div>
@@ -150,9 +169,16 @@
 				<div class="copyright">
 					<ul class="icons">
 						<li><a href="https://github.com/bobbychuong" class="icon fa-github-alt"><span class="label">GitHub</span></a></li>
-						<li><a href="https://www.linkedin.com/in/bobby-chuong-ba2261a4/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<!-- <li><a href="bobbychuong@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li> -->
+						<li><a href="https://www.linkedin.com/in/bobby-chuong-ba2261a4/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li><br>
+						<li><input type="text" oncopy="myFunction()" value="BobbyChuong@gmail.com" /></li>
+						<p id="demo"></p>
 					</ul>
+
+					<script>
+						function myFunction() {
+							document.getElementById("demo").innerHTML = "Copied!"
+						}
+					</script>
 				</div>
 			</footer>
 	</body>
