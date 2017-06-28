@@ -8,20 +8,21 @@
     <script src="angular-route/angular-route.js"></script>
     <script src="angular-messages/angular-messages.js"></script>
     <script src="my_angular/config.js"></script>
-    <script src="my_angular/factory.js"></script>
-    <script src="my_angular/indexController.js"></script>
-    <!-- <script src="my_angular/projectController.js"></script>
-    <script src="my_angular/resumeController.js"></script> -->
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
+    <script src="assets/js/fadethingsinandout.js"></script>
     <script src="assets/dist/clipboard.min.js"></script>
     <script src="parallax.js/parallax.js"></script>
 
-    <link rel="stylesheet" href="assets/css/scrolldownbutton.css" />
+
+    <link rel="stylesheet" href="animate.css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/fadeinpicture.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/scrolldownbutton.css">
     <link rel="stylesheet" href="assets/css/imghover.css" />
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <link rel="stylesheet" href="assets/css/shine.css" />
@@ -29,6 +30,23 @@
     <link rel="stylesheet" href="assets/css/curtain.css" />
     <link rel="stylesheet" href="assets/css/sticky_nav.css" />
   <!-- scripts -->
+
+  <script>
+  $(document).ready(function() {
+      /* Every time the window is scrolled ... */
+      $(window).scroll( function(){
+          /* Check the location of each desired element */
+          $('.image round fit').each( function(i){
+              var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              /* If the object is completely visible in the window, fade it it */
+              if( bottom_of_window > bottom_of_object ){
+                  $(this).animate({'opacity':'1'},500);
+              }
+          });
+      });
+  });
+  </script>
 
     <script>
       $("#slideshow > div:gt(0)").hide();

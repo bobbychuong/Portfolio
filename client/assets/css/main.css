@@ -2073,6 +2073,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
+
 	}
 
 		.flex.flex-2, .flex.flex-3 {
@@ -2903,7 +2904,6 @@ ul.icons li .icon{
 		padding: 6em 0 4em 0;
 		position: relative;
 	}
-
 		.wrapper .inner {
 			margin: 0 auto;
 			width: 80em;
@@ -3962,6 +3962,7 @@ ul.icons li .icon{
 	#footer > h1{
 		color: white;
 		text-align: center;
+
 	}
 
 		#footer > .inner {

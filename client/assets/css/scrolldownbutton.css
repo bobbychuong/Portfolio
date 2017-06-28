@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
-section::after {
+/*@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);*/
+/*section::after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -18,7 +18,7 @@ section::after {
 		rgba(0, 0, 0, .8) 80%,
 		rgba(0, 0, 0, .8) 100%
 	);
-}
+}*/
 #section06 {
 	background: url(http://www.nxworld.net/codepen/css-scroll-down-button/bg06.jpg)
 		center

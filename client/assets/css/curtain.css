@@ -45,10 +45,10 @@ div#theatre:hover #curtain-right {
 }
 
 #theatre p {
-    width: 50%;
-    margin: 0.5em auto;
+    /*width: 50%;
+    margin: 0.5em auto;*/
     /*position: relative;*/
-    z-index: 3;
+    /*z-index: 3;*/
 }
 
 #theatre p:first-of-type:before {

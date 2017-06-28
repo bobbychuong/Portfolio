@@ -4,7 +4,6 @@ app.config(function($routeProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'partials/index.html',
-      controller: 'IndexController'
     })
     .otherwise({
       redirectTo: '/'
