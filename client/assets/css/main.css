@@ -3185,6 +3185,7 @@ ul.icons li .icon{
 	width: 100px;
 	-webkit-border-radius: 20px;
 	display: inline-block;
+	position: relative;
 }
 
 
@@ -4013,3 +4014,37 @@ ul.icons li .icon{
 			}
 
 		}
+div.bottom.ng-scope {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 1rem;
+	background-color: #1c1b1b;
+	text-align: center;
+}
+div.bottom.ng-scope > p {
+	padding-top: 14px;
+	color: white;
+}
+
+p#demo {
+	color: white;
+}
+
+a.icon.fa-github-alt {
+	margin-left: 33px;
+}
+
+figcaption {
+	position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  text-shadow: 0 0 1px white;
+  font-weight:900;
+	font-size: medium;
+	color: white;
+	font-family: cursive;
+
+}
