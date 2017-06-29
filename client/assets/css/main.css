@@ -15,6 +15,10 @@
 	 z-index: 1000;
 }
 
+header > h2 {
+	color: white;
+}
+
 .ng-scope {
 	background-color: #151313;
 }
